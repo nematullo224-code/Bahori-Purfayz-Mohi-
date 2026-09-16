@@ -1619,9 +1619,6 @@ class BahoriPurfayzApp {
 // 5. INITIALIZE ON DOM READY
 // ──────────────────────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
-  // Only run the canvas animation on Desktop screens to prevent mobile freezing
-  if (window.innerWidth >= 768) {
-    new PureTransparentCatfishAquarium('waterCanvas');
-  }
+  // Canvas animation disabled completely for maximum performance and to prevent freezing
   new BahoriPurfayzApp();
 });
